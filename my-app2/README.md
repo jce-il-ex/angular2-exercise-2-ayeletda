@@ -1,6 +1,6 @@
 # MyApp2
 
-[link[(https://ex2ad-6de9e.firebaseapp.com/)
+[link] (https://ex2ad-6de9e.firebaseapp.com/)
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
 ## Development server
