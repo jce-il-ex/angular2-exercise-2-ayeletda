@@ -1,33 +1,52 @@
-# MyApp2
+link: https://ex2ad-6de9e.firebaseapp.com/
 
-[link](ex2ad-6de9e.firebaseapp.com)
+#Submission date:
+14/03/2017
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+Sumbission rules:
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+all files should be in the github assignment repository.
+you should include a link to Firebase url in README.md file.
 
-## Code scaffolding
+# angular2-ex2
+second exercise - using components
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+---
 
-## Build
+## exercise 1 summary:
+### Create angular2 app:
+> we use `my-app` as example for an application name
+`$ ng new my-app`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+`$ cd my-app`
 
-## Running unit tests
+`$ ng serve`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+goto [http://localhost:4200](http://localhost:4200) and see if app works.
 
-## Running end-to-end tests
+### Deployment
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+`$ npm install -g firebase-tools`
 
-## Deploying to GitHub Pages
+`$ firebase login`
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+`$ firebase init`
+> use dist folder as public
 
-## Further help
+`$ ng build --prod`
 
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+`$ firebase deploy`
+
+## Creating new components:
+> we use `cmpnt-name` as example for a component name
+
+use the command `ng generate component cmpnt-name`
+> you can use the the short command `ng g c cmpnt-name`
+
+---
+# What to do?
+Create a new app (don't use the app from exercise 1).
+Create a new component for app navigation menu. call the component `nav-menu`.
+now create a new component again called `nav-item`.
+nav menu should include an array of 4 objects, each object represent an item in the navigation menu. (think which properties it should have). the navigation menu template should iterate on the array and make the navigation items, pass the object to `nav-item` with `@Input()` decorator.
+Style the app as you wish.
